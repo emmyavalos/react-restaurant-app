@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect, Link } from 'react-router-dom';
 import { isAuthenticated } from '../fakeAuth';
-import {Dimmer, List, Loader, Segment} from 'semantic-ui-react';
+import {Dimmer, Header, List, Loader, Segment} from 'semantic-ui-react';
 import axios from 'axios';
 
 class Menu extends Component {
@@ -42,6 +42,7 @@ menusLoader() {
     if (isAuthenticated())
     return(
       <Segment basic>
+        <Header as='h3'>Our Menu</Header>
           { this.state.menus.length > 0 ?
             <List>
               {this.displayMenus()}

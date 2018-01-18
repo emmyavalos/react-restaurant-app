@@ -6,7 +6,7 @@ import { isAuthenticated, logout } from '../fakeAuth';
 const styles = {
   activeNav: {
     textDecoration: 'underline',
-    backgroundColor: 'black',
+    backgroundColor: 'pink',
   }
 }
 
